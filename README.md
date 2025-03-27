@@ -68,7 +68,7 @@ EKS
 
 #### Etapa Modernizção
 
-![On-premise para RDS](../images/faq2_diagram_arq.png) 
+![Image](https://github.com/user-attachments/assets/09283004-5d77-4d74-adea-370e6cb0bc84)
 
 
 ## Como serão garantidos os requisitos de Segurança?
@@ -180,7 +180,7 @@ ECR
 
 ## Qual o diagrama da infraestrutura na AWS?
 
-![On-premise para RDS](../images/faq2_diagram_arq.png)
+![Image](https://github.com/user-attachments/assets/09283004-5d77-4d74-adea-370e6cb0bc84)
 
 ## Como serão garantidos os requisitos de Segurança?
 
