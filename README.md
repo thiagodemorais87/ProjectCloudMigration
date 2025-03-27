@@ -102,7 +102,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ### Banco de dados on-premise para RDS
 
-![On-premise para RDS](../images/faq1_on-premise_rds.png)
+![Image](https://github.com/user-attachments/assets/92fd40ea-10d8-4d45-bd02-762838e9d1d1)
 
 
 ## Como será realizado o processo de Backup?
