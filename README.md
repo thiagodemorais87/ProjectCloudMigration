@@ -58,7 +58,7 @@ EKS
 
 ## Qual o diagrama da empresa atual?
 
-![On-premise para RDS](../images/over1_structure_original.png)
+![Image](https://github.com/user-attachments/assets/408850c5-12a7-4625-9fdc-8838b106d8c4)
 
 ## Qual o diagrama da infraestrutura na AWS?
 
