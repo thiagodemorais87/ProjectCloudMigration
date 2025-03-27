@@ -64,7 +64,7 @@ EKS
 
 #### Etapa As-Is
 
-![On-premise para RDS](../images/arc1.png) 
+![Image](https://github.com/user-attachments/assets/3e94d503-d9ec-4cf7-a699-831a4907da2e)
 
 #### Etapa Modernizção
 
