@@ -230,7 +230,7 @@ Segurança de Containers e Kubernetes:
 
 A seguir, apresentamos a estimativa de custos para a implementação do projeto. A tabela abaixo detalha os valores correspondentes a cada item necessário para a execução, garantindo maior transparência e controle financeiro.
 
-![Estimativa Etapa 1](../images/table_budget.png)
+<img width="762" alt="Image" src="https://github.com/user-attachments/assets/ccec6de6-764f-4477-b174-88f48085fb9b" />
 
 
 ## Conclusão
