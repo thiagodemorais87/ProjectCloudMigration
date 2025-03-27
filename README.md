@@ -1,7 +1,7 @@
 ![banner](https://vetores.org/d/compass-uol.svg)
 # Introdução
 
-Este projeto representa a entrega final do estágio *Scholarship* na Compass UOL. Durante o programa, aplicamos conceitos e práticas fundamentais em tecnologia, segurança e desenvolvimento, consolidando conhecimentos adquiridos ao longo da jornada. O projeto reflete nosso aprendizado e dedicação, demonstrando habilidades técnicas e metodologias utilizadas no ambiente profissional.
+Este trabalho marca a conclusão do estágio Scholarship na Compass UOL. Ao longo do programa, exploramos conceitos essenciais de tecnologia, segurança e desenvolvimento, colocando em prática conhecimentos fundamentais. O projeto é um reflexo do nosso aprendizado e comprometimento, evidenciando tanto nossas habilidades técnicas quanto as metodologias aplicadas no ambiente profissional.
 
 ## Case
 
@@ -23,7 +23,7 @@ Arquitetura de operação utilizada pelo cliente
 - **Banco de Dados:** Servidor MySQL (500GB de dados, 10GB de RAM, 3 Core CPU).
 - **Frontend:** Servidor React (5GB de dados, 2GB de RAM, 1 Core CPU).
 - **Backend:** Servidor com 3 APIs, Nginx como balanceador de carga e armazenamento de arquivos estáticos (5GB de dados, 4GB de RAM, 2 Core CPU).
-- 
+  
 ## Estruturas Propostas na AWS
 
 - A migração inicial será feita com mínimas alterações, utilizando os seguintes serviços AWS:
@@ -81,7 +81,7 @@ EKS
 
 ## Quais atividades são necessária para a migração?
 
-As etapas de migração estão resumidas abaixo para facilitar o entendimento do processo. Cada etapa contém uma visão geral das atividades envolvidas. Para mais detalhes, links específicos estão disponíveis ao longo da documentação, proporcionando uma explicação mais aprofundada de cada fase. Recomendamos a leitura dos links para um melhor acompanhamento.
+As fases do processo de migração estão sintetizadas a seguir para tornar o entendimento mais claro. Cada etapa apresenta um panorama das atividades envolvidas. Para informações mais detalhadas, há links ao longo da documentação que oferecem uma explicação mais aprofundada de cada fase. Sugerimos a leitura desses materiais para um acompanhamento mais completo.
 
 ### Migração de Servidores e APIs para AWS EC2 com Application Migration Service
 
@@ -114,7 +114,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ### Migração
 
-Estimativa de três dias para migração:
+Estimativa de três dias (72 Horas) para migração:
 
 - Custos da migração do banco de dados (72 horas de uso t3.large)
     - 10.51 USD
@@ -235,10 +235,10 @@ A seguir, apresentamos a estimativa de custos para a implementação do projeto.
 
 ## Conclusão
 
-Este projeto visa garantir uma migração eficiente e segura da infraestrutura on-premise para a AWS, utilizando serviços gerenciados para otimizar desempenho, escalabilidade e segurança. A transição ocorre em duas etapas: primeiro, replicamos a estrutura atual na nuvem com serviços como AWS MGN, RDS, EC2 e DMS; em seguida, modernizamos a aplicação com EKS e microserviços Docker, promovendo maior eficiência e flexibilidade.
+Este projeto tem como objetivo assegurar uma migração segura e eficiente da infraestrutura on-premise para a AWS, utilizando serviços gerenciados para aprimorar desempenho, escalabilidade e segurança. O processo ocorre em duas fases: inicialmente, a estrutura atual é replicada na nuvem por meio de serviços como AWS MGN, RDS, EC2 e DMS; posteriormente, a aplicação é modernizada com EKS e microserviços Docker, aumentando sua eficiência e flexibilidade.
 
-A implementação adota boas práticas de segurança, incluindo IAM, WAF, criptografia via KMS e políticas de segurança para Kubernetes, garantindo um ambiente resiliente contra ameaças. Além disso, a estimativa de custos permite um planejamento financeiro detalhado, proporcionando previsibilidade no investimento.
+A implementação segue boas práticas de segurança, incorporando IAM, WAF, criptografia com KMS e políticas específicas para Kubernetes, garantindo um ambiente robusto contra ameaças. Além disso, a estimativa de custos permite um planejamento financeiro detalhado, proporcionando maior previsibilidade nos investimentos.
 
-Com essa abordagem estruturada, a migração não apenas reduz a complexidade operacional, mas também prepara a infraestrutura para suportar o crescimento futuro da aplicação com alto desempenho e confiabilidade.
+Com essa abordagem estruturada, a migração não apenas reduz a complexidade operacional, mas também prepara a infraestrutura para acompanhar o crescimento futuro da aplicação, garantindo alto desempenho e confiabilidade.
 
 ---
