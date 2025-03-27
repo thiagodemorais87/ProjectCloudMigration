@@ -128,7 +128,7 @@ Estimativa de três dias (72 Horas) para migração:
 - Custo total anual
     - 6,050.64 USD
 
-![Estimativa Etapa 1](../images/estimate_faq1.png)
+![Image](https://github.com/user-attachments/assets/d139d2b0-b551-4659-abbe-ae16f11bdafa)
 
 
 ---
@@ -220,11 +220,9 @@ Segurança de Containers e Kubernetes:
     - 11,734.08 USD
 
 
-![Estimativa Etapa 1](../images/estimate_faq1.png)
+![Image](https://github.com/user-attachments/assets/d139d2b0-b551-4659-abbe-ae16f11bdafa)
 
 
->[My Estimate - AWS](https://calculator.aws/#/estimate?id=1deb627dd7529d6a7b4e341042305ca2bb0cd456)
->Link de acesso ao orçamento na AWS (March 15, 2025) 💡
 
 ## Orçamento
 
