@@ -219,8 +219,7 @@ Segurança de Containers e Kubernetes:
 - Custo total anual
     - 11,734.08 USD
 
-
-
+![Image](https://github.com/user-attachments/assets/7675317b-c25c-46db-b756-762d8b53a185)
 
 
 
