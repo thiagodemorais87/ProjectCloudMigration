@@ -101,6 +101,18 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 11. Confirmar que a instância de cutover foi lançada com sucesso e, em seguida, finalizar o cutover.
 12. Arquivar o servidor de origem.
 
+### Migração do Banco de Dados com AWS DMS
+
+1.Criar uma instância de replicação do AWS DMS antes de configurar os endpoints.
+2.Criar um Endpoint de Origem no AWS DMS apontando para o banco MySQL atual.
+3.Criar um Endpoint de Destino para o novo banco no Amazon RDS.
+4.Configurar uma Tarefa de Migração com opção de Full Load + CDC (Change Data Capture) para replicação contínua.
+5.Iniciar a migração e monitorar no AWS DMS Console.
+6.Validar a integridade dos dados e realizar o switch para o novo banco.
+7.Estimativa de três dias (72 Horas) para migração.
+
+
+
 ### Banco de dados on-premise para RDS
 
 ![Image](https://github.com/user-attachments/assets/92fd40ea-10d8-4d45-bd02-762838e9d1d1)
@@ -115,9 +127,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ### Migração
 
-Estimativa de três dias (72 Horas) para migração:
-
-- Custos da migração do banco de dados (72 horas de uso t3.large)
+- Custos da migração do banco de dados(t3.Large)
     - 10.51 USD
 - Custos de armazenamento DMS
     - 57.50 USD
