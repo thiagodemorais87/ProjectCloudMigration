@@ -128,7 +128,7 @@ Estimativa de três dias (72 Horas) para migração:
 - Custo total anual
     - 6,050.64 USD
 
-![Image](https://github.com/user-attachments/assets/d139d2b0-b551-4659-abbe-ae16f11bdafa)
+![Image](https://github.com/user-attachments/assets/aee6d490-c112-4be2-84e9-b7c56efc5afb)
 
 
 ---
@@ -220,7 +220,7 @@ Segurança de Containers e Kubernetes:
     - 11,734.08 USD
 
 
-![Image](https://github.com/user-attachments/assets/d139d2b0-b551-4659-abbe-ae16f11bdafa)
+
 
 
 
