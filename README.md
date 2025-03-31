@@ -125,9 +125,9 @@ Estimativa de três dias (72 Horas) para migração:
 ### Estrutura
 
 - Custo mensal
-    - 504.22 USD
+    - 704.14 USD
 - Custo total anual
-    - 6,050.64 USD
+    - 8.449,68 USD
 
 ![Image](https://github.com/user-attachments/assets/aee6d490-c112-4be2-84e9-b7c56efc5afb)
 
@@ -216,9 +216,9 @@ Segurança de Containers e Kubernetes:
 ## Qual o custo da infraestrutura na AWS (AWS Calculator)?
 
 - Custo mensal
-    - 977.84 USD
+    - 1.088,95 USD
 - Custo total anual
-    - 11,734.08 USD
+    - 13.067,40 USD
 
 ![Image](https://github.com/user-attachments/assets/7675317b-c25c-46db-b756-762d8b53a185)
 
