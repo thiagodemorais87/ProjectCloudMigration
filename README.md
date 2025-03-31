@@ -223,14 +223,6 @@ Segurança de Containers e Kubernetes:
 ![Image](https://github.com/user-attachments/assets/7675317b-c25c-46db-b756-762d8b53a185)
 
 
-
-## Orçamento
-
-A seguir, apresentamos a estimativa de custos para a implementação do projeto. A tabela abaixo detalha os valores correspondentes a cada item necessário para a execução, garantindo maior transparência e controle financeiro.
-
-<img width="762" alt="Image" src="https://github.com/user-attachments/assets/d93c7ef0-cfb5-41ed-88f5-c79995d09f62" />
-
-
 ## Conclusão
 
 Este projeto tem como objetivo assegurar uma migração segura e eficiente da infraestrutura on-premise para a AWS, utilizando serviços gerenciados para aprimorar desempenho, escalabilidade e segurança. O processo ocorre em duas fases: inicialmente, a estrutura atual é replicada na nuvem por meio de serviços como AWS MGN, RDS, EC2 e DMS; posteriormente, a aplicação é modernizada com EKS e microserviços Docker, aumentando sua eficiência e flexibilidade.
