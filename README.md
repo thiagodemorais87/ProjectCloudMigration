@@ -15,15 +15,15 @@ O objetivo deste projeto é realizar a migração da infraestrutura on-premise p
 
 ## Benefícios para o Cliente
 
-- Redução de Custos: Migração para a AWS reduz custos operacionais com hardware e manutenção.
+- **Redução de Custos**: Migração para a AWS reduz custos operacionais com hardware e manutenção.
 
-- Maior Performance: Infraestrutura escalável e otimizada melhora a experiência do usuário final.
+- **Maior Performance**: Infraestrutura escalável e otimizada melhora a experiência do usuário final.
 
-- Alta Disponibilidade: Implementação de balanceamento de carga e auto scaling reduz tempo de inatividade.
+- **Alta Disponibilidade**: Implementação de balanceamento de carga e auto scaling reduz tempo de inatividade.
 
-- Segurança Aprimorada: Uso de AWS IAM, WAF, GuardDuty e KMS para proteção contra ameaças.
+- **Segurança Aprimorada**: Uso de AWS IAM, WAF, GuardDuty e KMS para proteção contra ameaças.
 
-- Eficiência e Agilidade: Kubernetes permite a rápida implantação e escalabilidade dos serviços.
+- **Eficiência e Agilidade**: Kubernetes permite a rápida implantação e escalabilidade dos serviços.
 
 ## Estrutura Atual
 
