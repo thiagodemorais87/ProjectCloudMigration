@@ -254,6 +254,58 @@ Segurança de Containers e Kubernetes:
 
 ## Qual o custo da infraestrutura na AWS (AWS Calculator)?
 
+### Amazon RDS MySQL Multi-AZ
+- Database Engine: MySQLDeployment Option: Multi-AZ 
+- Instance Type: db.m5.large (3 vCPUs, 8GB RAM – ajustado para suportar os 10GB de RAM mencionados)
+- Storage: 500GB (GP2 SSD)
+- Usage: 730 horas/mês (24/7 por 1 mês)
+- Backup: Backups automáticos com retenção de 7 dias
+Custo:  452,31 USD/mês (Mesmo do lift-and-shift)
+
+### Amazon EKS (Elastic Kubernetes Service)
+- Cluster EKS: 1 clusterNumber of Instances: 2 (para alta disponibilidade)
+- Worker Nodes: 4 nós EKS (2 por AZ, conforme diagrama). 
+- Tipo: t2.medium (2 vCPUs, 4GB RAM – ajustado para o projeto).
+- EBS: 10GB por nó (total 40GB)
+Custo:  554,80 USD/mês 
+
+### S3
+- Storage Class: StandardStorage Amount: 5GB
+- Requests: 1.000 PUTs e 10.000 GETs (estimativa conservadora).
+Custo:   0,12 USD/mês 
+
+### ALB
+- 1 ALB (centralizado para frontend e backend).
+- Bytes processados: 6GB/hora (5GB frontend + 1GB backend, conforme Etapa 1).
+- Novas conexões: 3/segundo.
+- Duração: 1 segundo.Solicitações: 4.5/segundo (1.5 frontend + 3 backend).
+- Regras: 5.
+- Horas: 730/mês
+Custo: 51,47 USD /mês
+
+### Amazon CloudFront
+- Tráfego: 100GB/mês (assumindo que CloudFront distribui o conteúdo do frontend e S3).
+- Requisições: 1.000.000 (média para um e-commerce).
+Custo: 11,50 USD/mês
+
+### AWS WAF
+- Web ACLs: 1 (associada ao CloudFront e ALB).
+- Regras: 5 (média).
+- Requisições: 1.000.000/mês.
+Custo: 10,60 USD/mês
+
+### Amazon CloudWatch
+- Logs: 5GB/mês (média para EKS, ALB, RDS).
+- Métricas: 10 métricas personalizadas (e.g., CPU, memória).
+Custo:   8,05 USD/mês
+
+### Amazon ECR (Elastic Container Registry)
+- Armazenamento: 1GB (imagens Docker para frontend e backend).
+- Transferência: 1GB/mês (push/pull).
+Custo:   0,10 USD/mês 
+
+### Estrutura
+
 - Custo mensal
     - 1.088,95 USD
 - Custo total anual
