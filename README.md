@@ -337,8 +337,8 @@ Segurança de Containers e Kubernetes:
 
 ## Duração 
 
-**Fase 1**: Migração para AWS (3 meses)
-**Fase 2**: Modernização com Kubernetes (4 meses)
+- **Fase 1**: Migração para AWS (3 meses)
+- **Fase 2**: Modernização com Kubernetes (4 meses)
 
 ## Conclusão
 
