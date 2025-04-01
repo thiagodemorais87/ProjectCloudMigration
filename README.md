@@ -6,8 +6,8 @@ Este trabalho marca a conclusão do estágio Scholarship na Compass UOL. Ao long
 ## Case
 
 A empresa fictícia está enfrentando um crescimento acelerado em seu E-commerce, tornando a infraestrutura atual incapaz de lidar com a alta demanda de acessos e compras. Para solucionar esse problema, a empresa TI SOLUÇÕES INCRÍVEIS alocou um time de dentro dos estúdios de Dev Sec Ops, para solucionar o desafio.
-A equpe da TI SOLUÇÕES INCRÍVEIS foi designada para realizar uma consultoria no caso de uma migração para a **AWS do seu serviço completo** (todas as maquinas on-premise clonadas para cloud), da empresa Fast Enginnering S/A, garantindo maior escalabilidade, segurança e eficiência na infraestrutura, onde a solução atual de arquitetura da empresa não está atendendo mais a alta demanda de acessos e compras, assim sendo este o requisito principal do projeto. 
-Posteriormente, após toda a migração para a AWS, tendo como a segunda etapa, foi solicitado a modernização com kubernetes: tendo a aplicação das melhores práticas de arquitetura em Cloud Computing para otimização e escalabilidade.
+A equipe da TI SOLUÇÕES INCRÍVEIS foi designada para realizar uma consultoria no caso de uma migração para a **AWS do seu serviço completo** (todas as maquinas on-premise clonadas para cloud), da empresa Fast Engineering S/A, garantindo maior escalabilidade, segurança e eficiência na infraestrutura, onde a solução atual de arquitetura da empresa não está atendendo mais a alta demanda de acessos e compras, assim sendo este o requisito principal do projeto. 
+Posteriormente, após toda a migração para a AWS, como segunda etapa, foi solicitado a modernização com kubernetes: com a aplicação das melhores práticas de arquitetura em Cloud Computing para otimização e escalabilidade.
 
 ## Objetivo
 
@@ -20,7 +20,7 @@ Em seguida, será realizada a **modernização da infraestrutura com Kubernetes*
 Arquitetura de operação utilizada pelo cliente
 
 
-- **Banco de Dados:** Servidor MySQL (500GB de dados, 10GB de RAM, 3 Core CPU).
+- **Banco de Dados:** Servidor MySQL (500GB de dados, 10GB de RAM, 3 Core vCPUs).
 - **Frontend:** Servidor React (5GB de dados, 2GB de RAM, 1 Core CPU).
 - **Backend:** Servidor com 3 APIs, Nginx como balanceador de carga e armazenamento de arquivos estáticos (5GB de dados, 4GB de RAM, 2 Core CPU).
   
@@ -42,13 +42,13 @@ AWS MGN
 
 AWS DMS
 
-AWS-EC2
+AWS EC2
 
-AWS-ALB
+AWS ALB
 
-AWS-RDS
+AWS RDS
 
-AWS-S3
+AWS S3
 
 CloudWatch
 
