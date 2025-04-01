@@ -125,6 +125,35 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ## Qual o custo da infraestrutura na AWS (AWS Calculator)?
 
+### Amazon RDS MySQL Multi-AZ
+- Database Engine: MySQLDeployment Option: Multi-AZ 
+- Instance Type: db.m5.large (3 vCPUs, 8GB RAM – ajustado para suportar os 10GB de RAM mencionados)
+- Storage: 500GB (GP2 SSD)
+- Usage: 730 horas/mês (24/7 por 1 mês)
+- Backup: Backups automáticos com retenção de 7 dias
+Custo:  452,31 USD/mês
+
+### EC2 Frontend
+
+- Instance Type: t3.medium (1 vCPU, 4GB RAM – ajustado para 2GB mencionados)
+- Number of Instances: 2 (para alta disponibilidade)
+Custo:  61,54 USD/mês
+
+### EC2 Backend
+-Instance Type: t3.large (2 vCPUs, 8GB RAM – ajustado para 4GB mencionados)
+-Number of Instances: 2 (alta disponibilidade)
+Custo:  122,27 USD/mês 
+
+### ALB
+- Frontend: 5 GB/hora.
+- Backend: 1 GB/hora.
+Custo:   45,63 USD + 22,27 USD = 67,9/mês
+
+### S3
+- Storage Class: StandardStorage Amount: 5GB
+- Requests: 1.000 PUTs e 10.000 GETs (estimativa conservadora).
+Custo:   0,12 USD/mês 
+
 ### Migração
 
 - Custos da migração do banco de dados(t3.Large)
