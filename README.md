@@ -25,7 +25,7 @@ O objetivo deste projeto é realizar a migração da infraestrutura on-premise p
 
 - **Eficiência e Agilidade**: Kubernetes permite a rápida implantação e escalabilidade dos serviços.
 
-  ## Riscos e Mitigação
+## Riscos e Mitigação
 
 - **Falhas de Rede**: Implementação de replicação de dados e redundância entre zonas de disponibilidade.
 
