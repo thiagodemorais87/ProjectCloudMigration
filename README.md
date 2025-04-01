@@ -13,6 +13,18 @@ Posteriormente, após toda a migração para a AWS, como segunda etapa, foi soli
 
 O objetivo deste projeto é realizar a migração da infraestrutura on-premise para a AWS, com foco na escalabilidade e segurança, através de uma abordagem ‘lift-and-shift’, seguida da modernização para Kubernetes com microserviços Docker.
 
+## Benefícios para o Cliente
+
+- Redução de Custos: Migração para a AWS reduz custos operacionais com hardware e manutenção.
+
+- Maior Performance: Infraestrutura escalável e otimizada melhora a experiência do usuário final.
+
+- Alta Disponibilidade: Implementação de balanceamento de carga e auto scaling reduz tempo de inatividade.
+
+- Segurança Aprimorada: Uso de AWS IAM, WAF, GuardDuty e KMS para proteção contra ameaças.
+
+- Eficiência e Agilidade: Kubernetes permite a rápida implantação e escalabilidade dos serviços.
+
 ## Estrutura Atual
 
 Arquitetura de operação utilizada pelo cliente
