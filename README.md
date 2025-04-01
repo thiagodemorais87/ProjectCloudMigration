@@ -79,12 +79,12 @@ EKS
 - **CloudWatch**: Monitore logs, métricas e eventos do ambiente AWS, configurando alarmes para detectar atividades suspeitas ou falhas no sistema.
 - **Security Groups**: Controle o tráfego permitido para as instâncias EC2.
 - **AWS Key Management Service (KMS)**: Utilize o KMS para gerenciar chaves de criptografia de forma segura, protegendo dados sensíveis armazenados em S3, RDS, EBS, e outros serviços.
-- **AWS GuardDuty**: será implementado para monitorar ameaças durante todas as fases do projeto, Durante a migração Lift-and-Shift para detectar acessos suspeitos e eventos maliciosos.
+- **AWS GuardDuty**: Será implementado para monitorar ameaças durante todas as fases do projeto, especialmente durante a migração Lift-and-Shift, a fim de detectar acessos suspeitos e eventos maliciosos.
 
 
-## Quais atividades são necessária para a migração?
+## Quais atividades são necessárias para a migração?
 
-As fases do processo de migração estão sintetizadas a seguir para tornar o entendimento mais claro. Cada etapa apresenta um panorama das atividades envolvidas. Para informações mais detalhadas, há links ao longo da documentação que oferecem uma explicação mais aprofundada de cada fase. Sugerimos a leitura desses materiais para um acompanhamento mais completo.
+As fases do processo de migração estão sintetizadas a seguir para tornar o entendimento mais claro. Cada etapa apresenta um panorama das atividades envolvidas. 
 
 ### Migração de Servidores e APIs para AWS EC2 com Application Migration Service
 
@@ -92,12 +92,12 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 1. Inicializar o AWS Application Migration Service na região de destino.
 2. Instalar o AWS Replication Agent no servidor de origem.
-3. Aguardar a conclusão da sincronização inicial. Após instalar o agente, é necessário aguardar a conclusão do processo de sincronização inicial, que realiza a replicação em nível de bloco do servidor de origem para o servidor de replicação na área de preparação.
+3. Após a instalação do agente, é necessário aguardar a conclusão da sincronização inicial, que realiza a replicação em nível de bloco do servidor de origem para o servidor de replicação na área de preparação.
 4. Lançar instâncias de teste. Após a sincronização inicial, é possível iniciar uma máquina de destino no Modo de Teste, permitindo a realização de testes de aceitação e a verificação do funcionamento correto do ambiente migrado.
 5. Realizar testes de aceitação nos servidores. Após testar com sucesso a instância de teste, finalize o teste e exclua a instância.
 6. Configurar ações pós-lançamento (se necessário).
 7. Aguardar a janela de cutover.
-8. Confirmar que não há atraso (lag).
+8. Verificar se há atraso (lag).
 9. Parar todos os serviços operacionais no servidor de origem.
 10. Lançar uma instância de cutover. Iniciar a máquina de destino no Modo de Cutover, iniciando o processo final de migração.
 11. Confirmar que a instância de cutover foi lançada com sucesso e, em seguida, finalizar o cutover.
@@ -111,7 +111,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 4.Configurar uma Tarefa de Migração com opção de Full Load + CDC (Change Data Capture) para replicação contínua.
 5.Iniciar a migração e monitorar no AWS DMS Console.
 6.Validar a integridade dos dados e realizar o switch para o novo banco.
-7.Estimativa de três dias (72 Horas) para migração.
+7.Estimativa de três dias (72 horas) para a migração.
 
 
 
