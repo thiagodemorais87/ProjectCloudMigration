@@ -131,28 +131,28 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 - Storage: 500GB (GP2 SSD)
 - Usage: 730 horas/mês (24/7 por 1 mês)
 - Backup: Backups automáticos com retenção de 7 dias
-Custo:  452,31 USD/mês
+- **Custo:**  452,31 USD/mês
 
 ### EC2 Frontend
 
 - Instance Type: t3.medium (1 vCPU, 4GB RAM – ajustado para 2GB mencionados)
 - Number of Instances: 2 (para alta disponibilidade)
-Custo:  61,54 USD/mês
+- **Custo:**  61,54 USD/mês
 
 ### EC2 Backend
--Instance Type: t3.large (2 vCPUs, 8GB RAM – ajustado para 4GB mencionados)
--Number of Instances: 2 (alta disponibilidade)
-Custo:  122,27 USD/mês 
+- Instance Type: t3.large (2 vCPUs, 8GB RAM – ajustado para 4GB mencionados)
+- Number of Instances: 2 (alta disponibilidade)
+- **Custo:**  122,27 USD/mês 
 
 ### ALB
 - Frontend: 5 GB/hora.
 - Backend: 1 GB/hora.
-Custo:   45,63 USD + 22,27 USD = 67,9/mês
+- **Custo:**   45,63 USD + 22,27 USD = 67,9/mês
 
 ### S3
 - Storage Class: StandardStorage Amount: 5GB
 - Requests: 1.000 PUTs e 10.000 GETs (estimativa conservadora).
-Custo:   0,12 USD/mês 
+- **Custo:**   0,12 USD/mês 
 
 ### Migração
 
@@ -260,19 +260,19 @@ Segurança de Containers e Kubernetes:
 - Storage: 500GB (GP2 SSD)
 - Usage: 730 horas/mês (24/7 por 1 mês)
 - Backup: Backups automáticos com retenção de 7 dias
-Custo:  452,31 USD/mês (Mesmo do lift-and-shift)
+- **Custo:**  452,31 USD/mês (Mesmo do lift-and-shift)
 
 ### Amazon EKS (Elastic Kubernetes Service)
 - Cluster EKS: 1 clusterNumber of Instances: 2 (para alta disponibilidade)
 - Worker Nodes: 4 nós EKS (2 por AZ, conforme diagrama). 
 - Tipo: t2.medium (2 vCPUs, 4GB RAM – ajustado para o projeto).
 - EBS: 10GB por nó (total 40GB)
-Custo:  554,80 USD/mês 
+- **Custo:**  554,80 USD/mês 
 
 ### S3
 - Storage Class: StandardStorage Amount: 5GB
 - Requests: 1.000 PUTs e 10.000 GETs (estimativa conservadora).
-Custo:   0,12 USD/mês 
+- **Custo:**   0,12 USD/mês 
 
 ### ALB
 - 1 ALB (centralizado para frontend e backend).
@@ -281,28 +281,28 @@ Custo:   0,12 USD/mês
 - Duração: 1 segundo.Solicitações: 4.5/segundo (1.5 frontend + 3 backend).
 - Regras: 5.
 - Horas: 730/mês
-Custo: 51,47 USD /mês
+- **Custo:** 51,47 USD /mês
 
 ### Amazon CloudFront
 - Tráfego: 100GB/mês (assumindo que CloudFront distribui o conteúdo do frontend e S3).
 - Requisições: 1.000.000 (média para um e-commerce).
-Custo: 11,50 USD/mês
+- **Custo:** 11,50 USD/mês
 
 ### AWS WAF
 - Web ACLs: 1 (associada ao CloudFront e ALB).
 - Regras: 5 (média).
 - Requisições: 1.000.000/mês.
-Custo: 10,60 USD/mês
+- **Custo:** 10,60 USD/mês
 
 ### Amazon CloudWatch
 - Logs: 5GB/mês (média para EKS, ALB, RDS).
 - Métricas: 10 métricas personalizadas (e.g., CPU, memória).
-Custo:   8,05 USD/mês
+- **Custo:**   8,05 USD/mês
 
 ### Amazon ECR (Elastic Container Registry)
 - Armazenamento: 1GB (imagens Docker para frontend e backend).
 - Transferência: 1GB/mês (push/pull).
-Custo:   0,10 USD/mês 
+- **Custo:**   0,10 USD/mês 
 
 ### Estrutura
 
