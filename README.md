@@ -11,9 +11,7 @@ Posteriormente, após toda a migração para a AWS, como segunda etapa, foi soli
 
 ## Objetivo
 
-O projeto visa realizar a migração da infraestrutura atual para a **AWS**, iniciando com um processo de **"lift-and-shift"**, garantindo uma transição rápida e segura, contando com sistema de failover. 
-
-Em seguida, será realizada a **modernização da infraestrutura com Kubernetes**, aplicando as melhores práticas de arquitetura em Cloud Computing. Para saber mais sobre essa segunda etapa, acesse a página dedicada à **modernização com Kubernetes.** 
+O objetivo deste projeto é realizar a migração da infraestrutura on-premise para a AWS, com foco na escalabilidade e segurança, através de uma abordagem ‘lift-and-shift’, seguida da modernização para Kubernetes com microserviços Docker.
 
 ## Estrutura Atual
 
@@ -120,54 +118,55 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 ![Image](https://github.com/user-attachments/assets/92fd40ea-10d8-4d45-bd02-762838e9d1d1)
 
 
-## Como será realizado o processo de Backup?
+## Como será realizado o processo de backup?
 
 - O RDS realiza backups contínuos do banco de dados dentro do período de retenção configurado.
 - Os arquivos estáticos armazenados no S3 são versionados e seguem um ciclo de vida.
 
-## Qual o custo da infraestrutura na AWS (AWS Calculator)?
+## Qual é o custo da infraestrutura na AWS (AWS Calculator)?
 
 ### Amazon RDS MySQL Multi-AZ
-- Database Engine: MySQLDeployment Option: Multi-AZ 
-- Instance Type: db.m5.large (3 vCPUs, 8GB RAM – ajustado para suportar os 10GB de RAM mencionados)
+- Database Engine: MySQL Deployment Option: Multi-AZ 
+- Instance Type: db.m5.large (3 vCPUs, 8 GB RAM – ajustado para suportar os 10 GB de RAM mencionados)
 - Storage: 500GB (GP2 SSD)
 - Usage: 730 horas/mês (24/7 por 1 mês)
 - Backup: Backups automáticos com retenção de 7 dias
 - **Custo:**  452,31 USD/mês
 
-### EC2 Frontend
+### Frontend (EC2)
 
-- Instance Type: t3.medium (1 vCPU, 4GB RAM – ajustado para 2GB mencionados)
+- Instance Type: t3.medium (1 vCPU, 4 GB RAM – ajustado para os 2 GB mencionados)
 - Number of Instances: 2 (para alta disponibilidade)
 - **Custo:**  61,54 USD/mês
 
-### EC2 Backend
+### Backend (EC2) 
 - Instance Type: t3.large (2 vCPUs, 8GB RAM – ajustado para 4GB mencionados)
 - Number of Instances: 2 (alta disponibilidade)
 - **Custo:**  122,27 USD/mês 
 
 ### ALB
-- Frontend: 5 GB/hora.
-- Backend: 1 GB/hora.
-- **Custo:**   45,63 USD + 22,27 USD = 67,9/mês
+- Frontend: 5 GB/hora
+- Backend: 1 GB/hora
+- **Custo:** 45,63 USD + 22,27 USD = 67,90 USD/mês
 
 ### S3
-- Storage Class: StandardStorage Amount: 5GB
+- Storage Class: Standard
+- Storage Amount: 5 GB
 - Requests: 1.000 PUTs e 10.000 GETs (estimativa conservadora).
 - **Custo:**   0,12 USD/mês 
 
 ### Migração
 
-- Custos da migração do banco de dados(t3.Large)
+- Custos da migração do banco de dados (t3.large)
     - 10.51 USD
 - Custos de armazenamento DMS
     - 57.50 USD
 
 ### Estrutura
 
-- Custo mensal
-    - 704.14 USD
-- Custo total anual
+- Custo mensal:
+    - 704,14 USD
+- Custo total anual:
     - 8.449,68 USD
 
 ![Image](https://github.com/user-attachments/assets/aee6d490-c112-4be2-84e9-b7c56efc5afb)
@@ -177,7 +176,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ## ETAPA 2: MODERNIZAÇÃO COM KUBERNETES
 
-## Quais atividades são necessária para a migração?
+## Quais atividades são necessárias para a migração?
 
 ### 1. Converter estrutura em microserviços docker
 
@@ -230,15 +229,15 @@ ECR
 - **AWS IAM**: configura usuários e permissões de acesso.
 - **AWS WAF**: protege o aplicativo contra ataques como SQL Injection e XSS.
 - **CloudWatch**: monitora logs, métricas e eventos do ambiente AWS, configurando alarmes para detectar atividades suspeitas ou falhas no sistema.
-- **Security Groups**: controla o tráfego permitido para as instâncias EC2, restringir o tráfego externo para o cluster.
+- **Security Groups**: controlam o tráfego permitido para as instâncias EC2 e restringem o tráfego externo para o cluster.
 - **AWS Key Management Service (KMS)**: gerencia chaves de criptografia de forma segura, protegendo dados sensíveis armazenados em S3, RDS, EBS, e outros serviços.
 
-Visando que o projeto esta em produção, será adicionado camadas extras de proteção e segurança:
+Visando que o projeto está em produção, serão adicionadas camadas extras de proteção e segurança:
 
 Segurança de Containers e Kubernetes:  
 
-- **PodSecurity Policies e RBAC**: Controla o acesso e as permissões de execução dentro do cluster Kubernetes, assegurando que os pods tenham as permissões mínimas e evitando o uso de práticas inseguras (como containers executando como root).
-- **Escaneamento de Imagens de Containers (Trivy, Clair)**: Assegura que as imagens de containers estejam livres de vulnerabilidades conhecidas antes de serem implantadas no Kubernetes.
+- **PodSecurity Policies e RBAC**: controlam o acesso e as permissões de execução dentro do cluster Kubernetes, assegurando que os pods tenham permissões mínimas e evitando o uso de práticas inseguras (como containers executando como root).
+- **Escaneamento de Imagens de Containers (Trivy, Clair)**: garante que as imagens de containers estejam livres de vulnerabilidades conhecidas antes de serem implantadas no Kubernetes.
 
 **Ameaças Internas e Zero Trust**
 
@@ -253,12 +252,12 @@ Segurança de Containers e Kubernetes:
 ## Como será realizado o processo de Backup?
 
 - O RDS realiza backups contínuos do banco de dados dentro do período de retenção configurado.
-- Os arquivos estaticos armazenados no S3 serão versionados e seguirão um ciclo de vida
+- Os arquivos estáticos armazenados no S3 serão versionados e seguirão um ciclo de vida.
 
 ## Qual o custo da infraestrutura na AWS (AWS Calculator)?
 
 ### Amazon RDS MySQL Multi-AZ
-- Database Engine: MySQLDeployment Option: Multi-AZ 
+- Database Engine: MySQL Deployment Option: Multi-AZ 
 - Instance Type: db.m5.large (3 vCPUs, 8GB RAM – ajustado para suportar os 10GB de RAM mencionados)
 - Storage: 500GB (GP2 SSD)
 - Usage: 730 horas/mês (24/7 por 1 mês)
@@ -266,11 +265,11 @@ Segurança de Containers e Kubernetes:
 - **Custo:**  452,31 USD/mês (Mesmo do lift-and-shift)
 
 ### Amazon EKS (Elastic Kubernetes Service)
-- Cluster EKS: 1 clusterNumber of Instances: 2 (para alta disponibilidade)
+- Cluster EKS: 1 cluster Number of Instances: 2 (para alta disponibilidade)
 - Worker Nodes: 4 nós EKS (2 por AZ, conforme diagrama). 
 - Tipo: t2.medium (2 vCPUs, 4GB RAM – ajustado para o projeto).
 - EBS: 10GB por nó (total 40GB)
-- **Custo:**  554,80 USD/mês 
+- **Custo:**  554,80 USD/mês
 
 ### S3
 - Storage Class: StandardStorage Amount: 5GB
@@ -319,10 +318,12 @@ Segurança de Containers e Kubernetes:
 
 ## Conclusão
 
-Este projeto tem como objetivo assegurar uma migração segura e eficiente da infraestrutura on-premise para a AWS, utilizando serviços gerenciados para aprimorar desempenho, escalabilidade e segurança. O processo ocorre em duas fases: inicialmente, a estrutura atual é replicada na nuvem por meio de serviços como AWS MGN, RDS, EC2 e DMS; posteriormente, a aplicação é modernizada com EKS e microserviços Docker, aumentando sua eficiência e flexibilidade.
+Este projeto tem como objetivo garantir uma migração segura e eficiente da infraestrutura on-premise para a AWS, adotando serviços gerenciados para aprimorar desempenho, escalabilidade e segurança. O processo ocorre em duas fases: inicialmente, a estrutura atual é replicada na nuvem por meio de serviços como AWS MGN, RDS, EC2 e DMS; posteriormente, a aplicação é modernizada com EKS e microserviços Docker, tornando-a mais eficiente e flexível.
 
-A implementação segue boas práticas de segurança, incorporando IAM, WAF, criptografia com KMS e políticas específicas para Kubernetes, garantindo um ambiente robusto contra ameaças. Além disso, a estimativa de custos permite um planejamento financeiro detalhado, proporcionando maior previsibilidade nos investimentos.
+A implementação segue boas práticas de segurança, incorporando IAM, WAF, criptografia com KMS e políticas específicas para Kubernetes, garantindo um ambiente protegido contra ameaças. Além disso, a estimativa de custos permite um planejamento financeiro detalhado, proporcionando maior previsibilidade nos investimentos e evitando custos inesperados.
 
-Com essa abordagem estruturada, a migração não apenas reduz a complexidade operacional, mas também prepara a infraestrutura para acompanhar o crescimento futuro da aplicação, garantindo alto desempenho e confiabilidade.
+Com essa abordagem estruturada, a migração reduz a complexidade operacional e prepara a infraestrutura para acompanhar o crescimento futuro da aplicação, assegurando alto desempenho, confiabilidade e escalabilidade.
+
+Com a modernização em Kubernetes, a aplicação estará mais ágil, resiliente e facilmente escalável, garantindo que a empresa esteja preparada para suportar picos de demanda com maior eficiência.
 
 ---
