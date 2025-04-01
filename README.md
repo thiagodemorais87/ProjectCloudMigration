@@ -105,13 +105,13 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 ### Migração do Banco de Dados com AWS DMS
 
-1.Criar uma instância de replicação do AWS DMS antes de configurar os endpoints.
-2.Criar um Endpoint de Origem no AWS DMS apontando para o banco MySQL atual.
-3.Criar um Endpoint de Destino para o novo banco no Amazon RDS.
-4.Configurar uma Tarefa de Migração com opção de Full Load + CDC (Change Data Capture) para replicação contínua.
-5.Iniciar a migração e monitorar no AWS DMS Console.
-6.Validar a integridade dos dados e realizar o switch para o novo banco.
-7.Estimativa de três dias (72 horas) para a migração.
+1. Criar uma instância de replicação do AWS DMS antes de configurar os endpoints.
+2. Criar um Endpoint de Origem no AWS DMS apontando para o banco MySQL atual.
+3. Criar um Endpoint de Destino para o novo banco no Amazon RDS.
+4. Configurar uma Tarefa de Migração com opção de Full Load + CDC (Change Data Capture) para replicação contínua.
+5. Iniciar a migração e monitorar no AWS DMS Console.
+6. Validar a integridade dos dados e realizar o switch para o novo banco.
+7. Estimativa de três dias (72 horas) para a migração.
 
 
 
