@@ -99,7 +99,7 @@ EKS
 - **CloudWatch**: Monitore logs, métricas e eventos do ambiente AWS, configurando alarmes para detectar atividades suspeitas ou falhas no sistema.
 - **Security Groups**: Controle o tráfego permitido para as instâncias EC2.
 - **AWS Key Management Service (KMS)**: Utilize o KMS para gerenciar chaves de criptografia de forma segura, protegendo dados sensíveis armazenados em S3, RDS, EBS, e outros serviços.
-- **AWS GuardDuty**: Será implementado para monitorar ameaças durante todas as fases do projeto, especialmente durante a migração Lift-and-Shift, a fim de detectar acessos suspeitos e eventos maliciosos.
+- **AWS GuardDuty**: Implementação de monitoramento contínuo de ameaças, com integração ao AWS Security Hub para uma visão centralizada de segurança e alertas automáticos via CloudWatch e SNS.
 
 
 ## Quais atividades são necessárias para a migração?
@@ -144,6 +144,7 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 
 - O RDS realiza backups contínuos do banco de dados dentro do período de retenção configurado.
 - Os arquivos estáticos armazenados no S3 são versionados e seguem um ciclo de vida.
+- Implementação de snapshots regulares das instâncias ECS e backup automatizado do EKS.
 
 ## Qual é o custo da infraestrutura na AWS (AWS Calculator)?
 
