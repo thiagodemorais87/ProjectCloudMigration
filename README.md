@@ -345,7 +345,7 @@ Segurança de Containers e Kubernetes:
 - **Fase 1**: Migração para AWS (3 meses)
 - **Fase 2**: Modernização com Kubernetes (4 meses)
 
-- **Freelancer** – R$ 150 a R$ 400/hora (tempo estimado: 3 a 6 meses)
+- **Desenvolvedor** – R$ 150 a R$ 400/hora (tempo estimado: 3 a 7 meses)
 
 ## Conclusão
 
