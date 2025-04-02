@@ -33,6 +33,8 @@ O objetivo deste projeto é realizar a migração da infraestrutura on-premise p
 
 - **Segurança**: Monitoramento contínuo e aplicação de políticas rigorosas de controle de acesso.
 
+- **Plano de Rollback**: Implementação de estratégias de Blue/Green Deployment e Canary Releases para minimizar riscos em caso de falha durante a migração.
+
 ## Estrutura Atual
 
 Arquitetura de operação utilizada pelo cliente
