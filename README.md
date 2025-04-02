@@ -50,7 +50,7 @@ Arquitetura de operação utilizada pelo cliente
 - **Frontend:** EC2 + Load Balancer.
 - **Backend:** EC2 + Load Balancer.
 - **Armazenamento de Arquivos:** Amazon S3.
-- **Segurança:** AWS IAM, AWS WAF e Grupos de Segurança AWS.
+- **Segurança:** AWS IAM, AWS WAF, AWS GuardDuty, AWS Shield Advanced e Grupos de Segurança AWS.
 
 - # ETAPA AS IS
 
