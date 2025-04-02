@@ -100,7 +100,9 @@ EKS
 - **Security Groups**: Controle o tráfego permitido para as instâncias EC2.
 - **AWS Key Management Service (KMS)**: Utilize o KMS para gerenciar chaves de criptografia de forma segura, protegendo dados sensíveis armazenados em S3, RDS, EBS, e outros serviços.
 - **AWS GuardDuty**: Implementação de monitoramento contínuo de ameaças, com integração ao AWS Security Hub para uma visão centralizada de segurança e alertas automáticos via CloudWatch e SNS.
-
+- **VPC Flow Logs**: Para monitorar tráfego dentro da sua VPC e detectar acessos não autorizados.
+- **RDS Automatic Backups**: Para recuperação de banco de dados em caso de ataque.
+- **AWS Systems Manager**: Para acesso seguro a instâncias EC2 sem necessidade de SSH.
 
 ## Quais atividades são necessárias para a migração?
 
