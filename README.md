@@ -87,11 +87,6 @@ EKS
 ![Image](https://github.com/user-attachments/assets/1649aadf-fbd1-4363-a32d-5030ba59044f)
 
 
-#### Etapa Modernizção
-
-![Image](https://github.com/user-attachments/assets/09283004-5d77-4d74-adea-370e6cb0bc84)
-
-
 ## Como serão garantidos os requisitos de Segurança?
 
 - **AWS IAM**: Configure usuários e permissões de acesso.
