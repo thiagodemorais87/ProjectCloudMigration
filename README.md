@@ -347,6 +347,18 @@ Segurança de Containers e Kubernetes:
 
 - **Desenvolvedor** – R$ 150 a R$ 400/hora (tempo estimado: 3 a 7 meses)
 
+## Treinamento
+- Com a migração do e-commerce concluída, capacitar a equipe do e-commerce da "Fast Engineering S/A"é o próximo passo para garantir o sucesso na AWS. Um treinamento focado permitirá que a empresa gerencie a infraestrutura com autonomia, resolva incidentes com agilidade e otimize o ambiente continuamente. Isso reduz a dependência de suporte externo e maximiza o retorno do investimento, mantendo os custos sob controle.
+
+- Isso pode ser feito com videoaulas da Udemy, como "AWS, na prática!", para aprendizado prático, e a certificação "AWS Certified Cloud Practitioner", que oferece uma base sólida em conceitos de nuvem via AWS Skill Builder. O plano incluiria assistir aos cursos da Udemy e, em 4-6 semanas, preparar-se para o exame de certificação. Essa capacitação, proposta pela "TI SOLUÇÕES INCRÍVEIS", garantiria autonomia e eficiência na operação da AWS.
+
+
+## Suporte
+- Após a migração "lift-and-shift" para a AWS, a "TI Soluções Incríveis" oferecerá suporte robusto à "Fast Engineering S/A", garantindo a estabilidade do e-commerce com validação rápida do MySQL, React e APIs, configuração otimizada do Elastic Load Balancer e instâncias EC2/RDS para suportar a demanda, além de monitoramento contínuo via CloudWatch; nos primeiros 90 dias, disponibilizaremos assistência 24/7 para resolver problemas e minimizar interrupções, complementada por orientação prática à equipe no uso do AWS Management Console, assegurando uma transição confiável rumo à modernização.
+
+
+
+
 ## Conclusão
 
 Este projeto tem como objetivo garantir uma migração segura e eficiente da infraestrutura on-premise para a AWS, adotando serviços gerenciados para aprimorar desempenho, escalabilidade e segurança. O processo ocorre em duas fases: inicialmente, a estrutura atual é replicada na nuvem por meio de serviços como AWS MGN, RDS, EC2 e DMS; posteriormente, a aplicação é modernizada com EKS e microserviços Docker, tornando-a mais eficiente e flexível.
