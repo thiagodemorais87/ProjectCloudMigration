@@ -84,7 +84,7 @@ EKS
 
 #### Etapa As-Is
 
-![Image](https://github.com/user-attachments/assets/1649aadf-fbd1-4363-a32d-5030ba59044f)
+![Image](https://github.com/user-attachments/assets/95680b7c-5afc-4e5b-ba66-29ad6c50b43b)
 
 
 ## Como serão garantidos os requisitos de Segurança?
