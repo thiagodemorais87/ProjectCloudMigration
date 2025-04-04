@@ -131,12 +131,6 @@ Este processo detalha os passos para a migração de servidores utilizando o **A
 7. Estimativa de três dias (72 horas) para a migração.
 
 
-
-### Banco de dados on-premise para RDS
-
-![Image](https://github.com/user-attachments/assets/92fd40ea-10d8-4d45-bd02-762838e9d1d1)
-
-
 ## Como será realizado o processo de backup?
 
 - O RDS realiza backups contínuos do banco de dados dentro do período de retenção configurado.
