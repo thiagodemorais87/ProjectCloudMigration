@@ -80,12 +80,16 @@ EKS
 
 ![Image](https://github.com/user-attachments/assets/408850c5-12a7-4625-9fdc-8838b106d8c4)
 
+
+
 ## Qual o diagrama da infraestrutura na AWS?
 
 #### Etapa As-Is
 
 ![Image](https://github.com/user-attachments/assets/95680b7c-5afc-4e5b-ba66-29ad6c50b43b)
 
+Diagrama da Arquitetura
+![Image](https://github.com/user-attachments/assets/0a6a5e3d-3154-4a34-b8bf-f22950bebcd6)
 
 ## Como serão garantidos os requisitos de Segurança?
 
