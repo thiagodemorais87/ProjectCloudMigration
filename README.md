@@ -84,7 +84,7 @@ EKS
 
 #### Etapa As-Is
 
-![image](https://github.com/user-attachments/assets/14149833-8864-44ec-a144-c497326b06e5)
+![Image](https://github.com/user-attachments/assets/1649aadf-fbd1-4363-a32d-5030ba59044f)
 
 
 #### Etapa Modernizção
